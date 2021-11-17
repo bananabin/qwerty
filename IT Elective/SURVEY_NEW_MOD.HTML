@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="SURVEY_NEW_MODstyles.css">
+    <title>Survey Form</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row h-100">
+            <div class="col-sm-12 my-auto">
+                <div class="surveyForm">
+                    <div class="card-body">
+                        <form id="personalInfo">
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label class="mx-3" for="inputFirstName">First Name:</label>
+                                    <input type="text" class="form-control rounded-pill" id="fName">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label class="mx-3" for="inputLastName">Last Name:</label>
+                                    <input type="text" class="form-control rounded-pill" id="lName">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="mx-3" for="inputAddress">House Number, Street Name, Village/Barangay:</label>
+                                <input type="text" class="form-control rounded-pill" id="barangay">
+                            </div>
+                            <div class="form-group">
+                                <label class="mx-3" for="inputCity">City/Municipality:</label>
+                                <input type="text" class="form-control rounded-pill" id="city">
+                            </div>
+                            <div class="form-group">
+                                <label class="mx-3" for="inputProvince">Province:</label>
+                                <input type="text" class="form-control rounded-pill" id="province">
+                            </div>
+                            <div class="form-group">
+                                <label class="mx-3" for="inputContactNumber">Mobile Number</label>
+                                <input type="text" class="form-control rounded-pill" id="mNumber">
+                            </div>
+                            <div class="form-group">
+                                <label class="mx-3" for="inputContactNumber">Email Address</label>
+                                <input type="email" class="form-control rounded-pill" id="email">
+                            </div>
+
+                           
+                        </form>
+                        
+                        <div class="btn-group">
+                            <div>
+                                <a href="LANDINGPAGE_NEW.html"><button type="submit" class="btn btn-danger btn-block rounded-pill mr-2" id="btnCancel">Cancel</button></a>
+                            </div>
+                            <div>
+                                <button type="submit" class="btn btn-danger btn-block rounded-pill " id="btnInfo">Next</button>   
+                            </div>
+                        </div>
+                        
+                    
+                        
+                        <form id="surveyCheckbox">
+                            <div class="text-justify">
+                                1. Are you currently experiencing any of the following symptoms, or have experienced them in the last 14 days?
+                                <b>(Ikaw ba ay may nararanasan o nakaranas ng mga sumusunod na sintomas sa nakaraang 14 na araw?)</b>
+                            </div>
+                            <div>
+                            <div>
+                                <label class="form-check"> Fever
+                                    <input type="checkbox" value="Fever" class="answer symptoms">
+                                    <span class="checkmark"></span>
+                                  </label>
+                            </div>
+                            <div>
+                                <label class="form-check"> Sore Throat
+                                    <input type="checkbox"  value="Sore Throat" class="answer symptoms">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            <div>
+                                <label class="form-check"> Headache or Body Pains
+                                    <input type="checkbox"  value="Headache or Body Pains" class="answer symptoms">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            <div>
+                                <label class="form-check"> Dry Cough
+                                    <input type="checkbox"  value="Dry Cough" class="answer symptoms">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            <div>
+                                <label class="form-check"> Runny Nose
+                                    <input type="checkbox"  value="Runny Nose" class="answer symptoms">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            <div>
+                                <label class="form-check"> Shortness of Breath
+                                    <input type="checkbox"  value="Shortness of Breath" class="answer symptoms">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            <div>
+                                <label class="form-check"> Loss of Smell or Taste
+                                    <input type="checkbox"  value="Loss of Smell or Taste" class="answer symptoms">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            <div>
+                                <label class="form-check"> Diarrhea
+                                    <input type="checkbox"  value="Diarrhea" class="answer symptoms">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            <div>
+                                <label class="form-check"> None(Not experiencing any symptoms)
+                                    <input type="checkbox"  value="None" class="answer" id="chkNone">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                        </div>
+
+                            <div class="text-justify my-5">
+                                2. Have you been in close contact with people who may be infected with, or suspected of having COVID-19 within the last 14 days?
+                                <b>(May nakasalamuha ka ba na maaaring o kumpirmadong pasyente na may COVID-19 mula sa isang metrong distansya o
+                                mas malapit pa at tumagal mahigit 15 minutos sa nakalipas na 14 araw?)</b>
+                            </div>
+                            <div class="form-row my-4">
+                                <div class="form-group col-md-6 text-center">
+                                    <div>
+                                        <label class="form-radio font-weight-bold"> Yes
+                                            <input type="radio" name="answerq2" id="rdoYes2" value="Yes">
+                                            <span class="radiobutton"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="form-group col-md-6 text-center">
+                                    <div>
+                                        <label class="form-radio font-weight-bold"> No
+                                            <input type="radio" name="answerq2" id="rdoNo2" value="No">
+                                            <span class="radiobutton"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>  
+
+                        
+
+                            <div class="text-justify my-5">
+                                3. Have you provided direct care for a patient with probable or confirmed COVID-19 case
+                                without using proper "Personal Protective Equipment (PPE)" for the past 14 days?
+                                <b>(Nag-alaga ka ba ng maaring o kumpirmadong pasyente na may COVID-19 ng hindi
+                                nakasuot ng tamang PPE (Personal Protective Equipment) sa nakalipas na 14 araw?)</b>
+                            </div>
+                            <div class="form-row my-4">
+                                <div class="form-group col-md-6 text-center">
+                                    <div>
+                                        <label class="form-radio font-weight-bold"> Yes
+                                            <input type="radio" name="answerq3" id="rdoYes3" value="Yes">
+                                            <span class="radiobutton"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="form-group col-md-6 text-center">
+                                    <div>
+                                        <label class="form-radio font-weight-bold"> No
+                                            <input type="radio" name="answerq3" id="rdoNo3" value="No">
+                                            <span class="radiobutton"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="text-justify my-5">
+                                4. Have you traveled outside the Philippines in the last 14 days?
+                                <b>(lkaw ba ay nagbiyahe sa labas ng Pilipinas sa nakalipas na 14 na araw?)</b>                                   
+                            </div>
+                            <div class="form-row my-4">
+                                <div class="form-group col-md-6 text-center">
+                                    <div>
+                                        <label class="form-radio font-weight-bold"> Yes
+                                            <input type="radio" name="answerq4" id="rdoYes4" value="Yes">
+                                            <span class="radiobutton"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="form-group col-md-6 text-center">
+                                    <div>
+                                        <label class="form-radio font-weight-bold"> No
+                                            <input type="radio" name="answerq4" id="rdoNo4" value="No">
+                                            <span class="radiobutton"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="text-justify my-5">
+                                5. Have you traveled outside the current city/municipality where you reside?
+                                <b>(lkaw ba ay nagbiyahe sa labas ng iyong lungsod/munisipyo?)</b>                                   
+                            </div>
+                            <div class="form-row my-4">
+                                <div class="form-group col-md-6 text-center">
+                                    <div>
+                                        <label class="form-radio font-weight-bold"> Yes
+                                            <input type="radio" name="answerq5" id="rdoYes5" value="Yes">
+                                            <span class="radiobutton"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="form-group col-md-6 text-center">
+                                    <div>
+                                        <label class="form-radio font-weight-bold"> No
+                                            <input type="radio" name="answerq5" id="rdoNo5" value="No">
+                                            <span class="radiobutton"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="inputContactNumber" class="text-justify">If yes, specify which city/municipality you went to
+                                <b>(Sabihin kung saan)</b></label>
+                                <input type="text" class="form-control rounded-pill" id="mPlace">
+                            </div>
+                        
+                        </form>
+                            <!-- OLD SUBMIT BUTTON
+                            <div class="button">
+                                <button type="submit" class="btn btn-danger btn-block rounded-pill my-4" id="btnSubmit" >Submit(5/5)</button>
+                            </div> -->
+                            <div class="btn-group">
+                                <div class="button">
+                                    <button type="submit" class="btn btn-danger btn-block rounded-pill my-4 mr-2" id="btnBack">Back</button>
+                                </div>
+                                <div class="button">
+                                    <button type="submit" class="btn btn-danger btn-block rounded-pill my-4" id="btnSubmit">Submit</button>
+                                </div>
+                            </div>
+                            
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-dialog modal-dialog-centered">
+    <div class="modal" tabindex="-1" id="messageModal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Your Reference Number:</h5>
+            </div>
+            <div class="modal-body">
+              <div class="font-weight-bold" id="userId" style="font-size: 50px;"></div>
+              <p>Please remember your reference number. Thank You!</p>
+            </div>
+            <div class="modal-footer">
+              <a href="LANDINGPAGE_NEW.html"><button type="button" class="btn btn-danger">Okay</button></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="jquery-3.5.1.slim.min.js"></script>
+    <script src="ajax_libs_jquery_2.1.3_jquery.min.js"></script>
+    <script src="popper.min.js"></script>
+    <script src="bootstrap.min.js"></script>
+    <script src="survey.js"></script>
+</body>
+</html>

@@ -1,0 +1,248 @@
+
+  html
+  {
+
+    height: 100%;
+    background-image: url(LANDINGBG_L2.png);
+    background-repeat:no-repeat;
+    background-position: center center;
+  }
+
+  .bg {
+    height: auto;
+    /* Other shits */
+    color: #f64c66;
+    font-family: 'Lato', sans-serif;
+  }
+
+  .img-fluid
+  {
+    display: block;
+
+    margin-bottom: 6%;
+    margin-top: 30%;
+    height: auto;
+  }
+
+  #hlink {
+    color: #f64c66;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2.5%;
+  }
+
+  .bg .navbar {
+    margin-top: 2%;
+    
+
+  }
+
+  .bg .navbar-brand {
+    color: rgb(92, 92, 92);
+    font-size: large;
+    font-weight: 900;
+    font-style: bold;
+    
+  }
+    
+  .bg .nav li a {
+    
+    color: rgb(92, 92, 92);
+  }
+
+  .bg .btn-custom {
+    margin-bottom: 2%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    font-family: Lato;
+    font-size: larger;
+    color: #d93850;
+    letter-spacing: 1px;
+    line-height: 15px;
+    border: 2px solid #d93850;
+    border-radius: 18px;
+    background: rgba(255, 255, 255, 0.10);
+    padding: 12px;
+    width: 200px;
+    transition: all 0.3s ease 0s;
+  }
+
+  .bg .btn-custom:hover {
+    background: #d93850;
+    color: white;
+  }
+  
+  .form-container {
+    font-family: Lato;
+    background: whitesmoke;
+    border-radius: 18px; 
+    padding: 80px 60px 80px;
+    margin-top: 20vh;
+    box-shadow: 6px 6px 22px -4px rgba(0,0,0,0.59);
+  }
+  
+  .form-container .btn-login {
+    margin-top: 5%;
+    font-family: Lato;
+    color: white;
+    letter-spacing: 1px;
+    line-height: 20px;
+    border: 2px solid white;
+    border-radius: 24px;
+    background: #d93850;
+    padding: 12px 26px;
+    transition: all 0.3s ease 0s;
+  }
+
+  .form-container .btn-login:hover {
+    background: #ff526c;
+    color: white;
+  }
+
+  .loginHeader{
+    padding: 0px 0px 30px;
+    font-weight: 900;
+    font-style: black;
+    font-size: 32px;
+  }
+
+  .form-container .form-label{
+    margin-bottom: 1px;
+  }
+  .form-container .form-control{
+    border: 1px solid rgb(187, 187, 187);
+    background: rgb(235, 235, 235);
+    border-radius: 18px;
+  }
+
+  .bg .logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3%;
+    margin-bottom: 3%;
+
+    height: 100%;
+    width: 100%
+  }
+
+
+
+  @media screen and (min-width: 768px)
+{
+  html {
+    overflow-y: hidden;
+
+    background-color: whitesmoke;
+    height: 100%;
+
+    
+    background-image: url(LANDINGBG_L2.png);
+    background-repeat:no-repeat;
+    background-position: center center;
+  }
+
+  .bg {
+    background-color: whitesmoke;
+    /* Other shits */
+    color: #f64c66;
+    font-family: 'Lato', sans-serif;
+  }
+
+  #hlink {
+    color: #f64c66;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .img-fluid
+  {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 8%;
+    margin-top: 12%;
+    height: auto;
+  }
+
+  .bg .navbar {
+    margin-top: 2%;
+  }
+
+  .bg .navbar-brand {
+    color: rgb(92, 92, 92);
+    font-size: large;
+    font-weight: 900;
+    font-style: bold;
+  }
+    
+  .bg .nav li a {
+    color: rgb(92, 92, 92);
+  }
+
+  .bg .btn-custom {
+    margin-bottom: 1%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    font-family: Lato;
+    font-size: larger;
+    color: #d93850;
+    letter-spacing: 1px;
+    line-height: 15px;
+    border: 2px solid #d93850;
+    border-radius: 18px;
+    background: rgba(255, 255, 255, 0.10);
+    padding: 12px;
+    width: 200px;
+    transition: all 0.3s ease 0s;
+  }
+
+}
+
+@media screen and (min-width: 992px) {
+  html {
+    overflow-y: hidden;
+
+    background-color: whitesmoke;
+    height: 100%;
+
+    
+    background-image: url(LANDINGBG_L2.png);
+    background-repeat:no-repeat;
+    background-position: center center;
+  }
+
+  .bg {
+    background-color: whitesmoke;
+    /* Other shits */
+    color: #f64c66;
+    font-family: 'Lato', sans-serif;
+  }
+
+  .bg .img-fluid
+  {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5%;
+    margin-top: 9%;
+    height: auto;
+  }
+
+  .bg .navbar {
+    margin-top: 2%;
+  }
+
+  .bg .navbar-brand {
+    color: rgb(92, 92, 92);
+    font-size: large;
+    font-weight: 900;
+    font-style: bold;
+  }
+    
+  .bg .nav li a {
+    color: rgb(92, 92, 92);
+  }
+
+
+}

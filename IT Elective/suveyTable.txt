@@ -1,0 +1,63 @@
+
+CREATE table Q1_table (
+    Q1_id int(16) AUTO_INCREMENT,
+    fever varchar(5) not null,
+    soreThroat varchar(5) not null,
+    bodyPain varchar(5) not null,
+    dryCough varchar(5) not null,
+    runnyNose varchar(5) not null,
+    shortBreath varchar(5) not null,
+    lossOfSmell varchar(5) not null,
+    diarrhea varchar(5) not null,
+    none varchar(5) not null,
+    PRIMARY KEY (Q1_id)
+);
+
+ALTER TABLE q1_table AUTO_INCREMENT=1001;
+
+insert into q1_table (
+    	fever, 
+	soreThroat,
+	bodyPain,
+	dryCough,
+    	runnyNose,
+    	shortBreath,
+    	lossOfSmell,
+    	diarrhea,
+    	none
+)
+	VALUES (
+	'No','No','No','No','No','No','No','No','No'
+);
+
+CREATE table survey_table (
+    question_id int(16) AUTO_INCREMENT,
+    user_id int REFERENCES user_info(user_id),
+    Q1 int REFERENCES q1_table(Q1_id),
+    Q2 varchar(10) not null,
+    Q3 varchar(10) not null,
+    Q4 varchar(10) not null,
+    Q5 varchar(10) not null,
+    Q5_place varchar(10) null,
+    PRIMARY KEY (question_id)
+);
+
+ALTER TABLE survey_table AUTO_INCREMENT=101;
+
+INSERT INTO survey_table (Q2, Q3, Q4, Q5) VALUES ('No', 'No', 'No','No');
+
+CREATE SEQUENCE seq_user_id
+MINVALUE 1
+START WITH 1
+INCREMENT BY 1
+CACHE 20; 
+
+CREATE SEQUENCE seq_q1_id
+MINVALUE 1
+START WITH 1001
+INCREMENT BY 1
+CACHE 20; 
+
+
+
+INSERT INTO survey_table (user_id, Q1, Q2, Q3, Q4, Q5) VALUES (seq_user_id.nextval, seq_q1_id.nextval,  'No', 'No', 'No','No');

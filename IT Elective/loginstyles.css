@@ -1,0 +1,124 @@
+body, html {
+  height: 100%;
+  background-color: rgb(190, 190, 190);
+}
+.bg {
+  /* The image used */
+  background-image: url("https://i.ibb.co/rt3p7Kv/BGtokyo.jpg");
+
+  /* Height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  /* Other shits */
+  color: white;
+  font-family: 'Lato', sans-serif;
+}
+
+.bg .navbar {
+  margin-top: 2%;
+}
+
+.bg .navbar-brand {
+  color: white;
+  font-size: large;
+  font-weight: 900;
+  font-style: bold;
+}
+  
+.bg .nav li a {
+  color: lightgray;
+}
+
+.bg .infoadj {
+  margin-top: 12%;
+}
+
+.bg .infoadj h1{
+  font-weight: 800;
+}
+
+.bg .infoadj p{
+  font-size: larger;
+  color: lightgray;
+}
+
+.bg .infoadj a {
+  margin-left: 50%;
+  transform: translateX(-50%);
+  padding: 12px 22px;
+  color: white;
+  background: #c43140;
+}
+
+.bg .infoadj a:hover {
+  background: #d93850;
+}
+
+.bg .btn-custom {
+  margin-top: 5%;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  font-family: Lato;
+  font-size: larger;
+  color: white;
+  letter-spacing: 1px;
+  line-height: 15px;
+  border: 2px solid white;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.10);
+  padding: 12px 26px;
+  transition: all 0.3s ease 0s;
+}
+
+.bg .btn-custom:hover {
+  background: #d93850;
+  color: white;
+}
+
+.form-container {
+  font-family: Lato;
+  background: whitesmoke;
+  border-radius: 18px; 
+  padding: 80px 60px 80px;
+  margin-top: 20vh;
+  box-shadow: 6px 6px 22px -4px rgba(0,0,0,0.59);
+}
+
+.form-container .btn-login {
+  margin-top: 5%;
+  font-family: Lato;
+  color: white;
+  letter-spacing: 1px;
+  line-height: 20px;
+  border: 2px solid white;
+  border-radius: 24px;
+  background: #d93850;
+  padding: 12px 26px;
+  transition: all 0.3s ease 0s;
+}
+
+.form-container .btn-login:hover {
+  background: #ff526c;
+  color: white;
+}
+
+.loginHeader{
+  padding: 0px 0px 30px;
+  font-weight: 900;
+  font-style: black;
+  font-size: 32px;
+}
+
+.form-container .form-label{
+  margin-bottom: 1px;
+}
+.form-container .form-control{
+  border: 1px solid rgb(187, 187, 187);
+  background: rgb(235, 235, 235);
+  border-radius: 18px;
+}

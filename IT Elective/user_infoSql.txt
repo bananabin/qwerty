@@ -1,0 +1,19 @@
+CREATE DATABASE survey;
+
+use survey;
+
+CREATE TABLE user_info (
+	user_id int(5) AUTO_INCREMENT not null,
+    fname varchar(50) not null,
+    lname varchar(50) not null,
+    street_barangay varchar(50) not null,
+    city_municipality varchar(50) not null,
+    province varchar(50) not null,
+    mobile_number varchar(11) null,
+    email varchar(50) null,
+    survey_date date,
+    survey_time time,
+    PRIMARY KEY (user_id)
+)
+
+insert into user_info (fname, lname, street_barangay, city_municipality, province, mobile_number, email, survey_date, survey_time ) VALUES ('Diva', 'Libaton', '108 Luwasan Catmon', 'Sta.Maria', 'Bulacan', '09123456789', 'email@me.pw', CURDATE(), CURTIME());
